@@ -1,0 +1,24 @@
+# Virtual Environment
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+data/raw/downloaded files/
+data/raw/data fetched/
+
+# Generated outputs
+data/processed/
+reports/
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
