@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-06-02 22:24:02",
+  "datasets": [
+    {
+      "name": "fund_master",
+      "rows": 40,
+      "cols": 15,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": []
+    },
+    {
+      "name": "nav_history",
+      "rows": 46000,
+      "cols": 3,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": []
+    },
+    {
+      "name": "aum_by_fund_house",
+      "rows": 90,
+      "cols": 5,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": []
+    },
+    {
+      "name": "monthly_sip_inflow",
+      "rows": 48,
+      "cols": 6,
+      "missing_cols": {
+        "yoy_growth_pct": 12
+      },
+      "duplicates": 0,
+      "anomalies": []
+    },
+    {
+      "name": "category_inflow",
+      "rows": 144,
+      "cols": 3,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": []
+    },
+    {
+      "name": "industry_folio_count",
+      "rows": 21,
+      "cols": 6,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": []
+    },
+    {
+      "name": "scheme_performance",
+      "rows": 40,
+      "cols": 19,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": [
+        "  \u26a0  Negative values in 'max_drawdown_pct': 40 rows"
+      ]
+    },
+    {
+      "name": "investor_transactions",
+      "rows": 32778,
+      "cols": 13,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": []
+    },
+    {
+      "name": "portfolio_holdings",
+      "rows": 322,
+      "cols": 8,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": []
+    },
+    {
+      "name": "benchmark_index",
+      "rows": 8050,
+      "cols": 3,
+      "missing_cols": {},
+      "duplicates": 0,
+      "anomalies": []
+    }
+  ]
+}

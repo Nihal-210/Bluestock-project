@@ -1,0 +1,8 @@
+dataset,rows,columns,null_values,null_pct,duplicates
+nav_Axis_Bluechip.csv,3564,7,0,0.0,0
+nav_HDFC_Top100_Direct.csv,3090,7,0,0.0,0
+nav_ICICI_Bluechip.csv,3306,7,0,0.0,0
+nav_Kotak_Bluechip.csv,3300,7,0,0.0,0
+nav_Nippon_LargeCap.csv,3297,7,0,0.0,0
+nav_SBI_Bluechip.csv,3235,7,0,0.0,0
+nav_all_schemes_combined.csv,19792,7,0,0.0,0

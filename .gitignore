@@ -9,14 +9,6 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data files
-data/raw/downloaded files/
-data/raw/data fetched/
-
-# Generated outputs
-data/processed/
-reports/
-
 # Environment variables
 .env
 
