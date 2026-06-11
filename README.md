@@ -1,59 +1,254 @@
-# Mutual Fund Analytics — Day 1: Data Ingestion
+# 📈 Mutual Fund Analytics Platform
 
-## Project Structure
+An end-to-end Mutual Fund Analytics and Business Intelligence platform built using Python, SQL, and Power BI.
 
+The project analyzes mutual fund performance, investor behavior, SIP trends, AUM growth, and portfolio diversification using real-world mutual fund datasets.
+
+---
+
+## 🎯 Project Overview
+
+This project transforms raw mutual fund data into actionable business insights through:
+
+- Data Cleaning & ETL Pipelines
+- Financial Performance Analysis
+- Investor Analytics
+- Risk & Return Evaluation
+- Interactive Dashboards
+- Automated Reporting
+
+The platform enables investors, analysts, and fund houses to make data-driven decisions.
+
+---
+
+## 📊 Key Features
+
+### Industry Analytics
+- AUM Growth Analysis
+- SIP Inflow Tracking
+- Folio Growth Trends
+- Category-wise Inflow Analysis
+
+### Fund Performance Analytics
+- CAGR Calculation
+- Alpha & Beta Analysis
+- Sharpe Ratio
+- Sortino Ratio
+- Maximum Drawdown
+
+### Investor Analytics
+- Age Group Analysis
+- Gender Distribution
+- State-wise Participation
+- T30 vs B30 Comparison
+
+### Portfolio Analytics
+- Sector Allocation
+- Correlation Analysis
+- Diversification Insights
+
+---
+
+## 🏗️ System Architecture
+
+```text
+Raw Data Sources
+        │
+        ▼
+   ETL Pipeline
+        │
+        ▼
+ Data Warehouse
+        │
+        ▼
+ Analytics Engine
+        │
+        ▼
+ Dashboards & Reports
 ```
-mutual_fund_project/
-├── data/
-│   ├── raw/            # Raw CSVs & JSONs fetched from mfapi.in
-│   └── processed/      # Cleaned, enriched DataFrames
-├── notebooks/          # Jupyter EDA notebooks
-├── sql/                # SQL scripts
-├── dashboard/          # Dashboard files (Plotly/Dash)
-├── reports/            # Generated text/PDF reports
-├── data_ingestion.py   # Main EDA & validation script
-├── live_nav_fetch.py   # Live NAV fetcher (mfapi.in)
-├── requirements.txt    # Python dependencies
-└── setup.sh            # One-time project setup script
-```
 
-## Quickstart
+---
+
+## 📂 Datasets Used
+
+| Dataset | Description |
+|----------|------------|
+| Fund Master | Scheme metadata |
+| NAV History | Historical NAV data |
+| AUM Data | Fund house AUM |
+| SIP Inflows | Monthly SIP statistics |
+| Category Inflows | Category-wise investments |
+| Folio Count | Investor participation |
+| Scheme Performance | Risk-return metrics |
+| Investor Transactions | Demographic analysis |
+| Portfolio Holdings | Sector allocation |
+| Benchmark Indices | Market benchmark data |
+
+---
+
+## 📈 Analytics Performed
+
+### Exploratory Data Analysis
+- NAV Trend Analysis
+- AUM Growth Analysis
+- SIP Trend Analysis
+- Investor Demographics
+
+### Performance Analysis
+- Daily Returns
+- CAGR
+- Alpha
+- Beta
+- Sharpe Ratio
+- Sortino Ratio
+
+### Risk Analysis
+- Maximum Drawdown
+- Correlation Matrix
+- Portfolio Diversification
+
+---
+
+## 📊 Dashboard Overview
+
+The Power BI dashboard contains:
+
+### Industry Overview
+- Total AUM
+- SIP Inflows
+- Folio Growth
+
+### Fund Performance
+- NAV Trends
+- Alpha & Beta Comparison
+- Risk-Return Analysis
+
+### Investor Analytics
+- Age Distribution
+- Gender Split
+- Geographic Analysis
+
+### Portfolio Analytics
+- Sector Allocation
+- Correlation Heatmap
+
+---
+
+## 📁 Repository Structure
+
+📦bluestock_mf_capstone
+ ┣ 📂data
+ ┃ ┣ 📂raw                         # Immutable source assets & live API extractions
+ ┃ ┃ ┣ 📜01_fund_master.csv
+ ┃ ┃ ┣ 📜02_nav_history.csv
+ ┃ ┃ ┣ 📜... (Other raw datasets)
+ ┃ ┃ ┗ 📜125497_HDFC_TOP_100_live.csv
+ ┃ ┣ 📂processed                   # Standardized, cleaned, and filled datasets
+ ┃ ┃ ┣ 📜clean_nav_history.csv
+ ┃ ┃ ┗ 📜clean_transaction.csv
+ ┃ ┣ 📂db                          # SQLite Star Schema warehouse engine
+ ┃ ┃ ┗ 📜bluestock_mf.db
+ ┃ ┗ 📜README.md
+ ┣ 📂notebooks                     # Sequential pipeline processing environments
+ ┃ ┣ 📜01_data_ingestion.ipynb
+ ┃ ┣ 📜02_data_cleaning.ipynb
+ ┃ ┣ 📜03_EDA_Analysis.ipynb
+ ┃ ┣ 📜04_Performance_Analytics.ipynb
+ ┃ ┣ 📜05_Advanced_Analytics.ipynb
+ ┃ ┗ 📜README.md
+ ┣ 📂scripts                       # Production automation & execution apps
+ ┃ ┣ 📜live_nav_fetch.py
+ ┃ ┣ 📜recommender.py
+ ┃ ┗ 📜README.md
+ ┣ 📂sql                           # Structural warehouse creation logic
+ ┃ ┣ 📜schema.sql
+ ┃ ┣ 📜queries.sql
+ ┃ ┗ 📜README.md
+ ┣ 📂dashboard                     # Front-end business intelligence binaries
+ ┃ ┣ 📜bluestock_mf_dashboard.pbix
+ ┃ ┗ 📜README.md
+ ┣ 📂reports                       # Exported analytical metrics, visuals & PDFs
+ ┃ ┣ 📜fund_scorecard.csv
+ ┃ ┣ 📜var_cvar_reports.csv
+ ┃ ┣ 📜sector_hhi_chart.png
+ ┃ ┣ 📜Dashboard - Page1.png
+ ┃ ┣ 📜Final_Report.pdf
+ ┃ ┗ 📜README.md
+ ┣ 📜requirements.txt              # Standard system dependencies
+ ┣ 📜data_dictionary.md            # Warehouse data model catalog
+ ┣ 📜run_pipeline.py               # Absolute path automation master controller
+ ┗ 📜Bluestock_MF_Presentation.pptx # Fintech investment presentation deck
+
+---
+
+## 🛠️ Tech Stack
+
+### Programming
+- Python
+
+### Libraries
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+### Database
+- SQLite
+
+### Visualization
+- Power BI
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
 
 ```bash
-# 1. Setup (installs deps + git init)
-bash setup.sh
-
-# 2. Fetch live NAV data
-python live_nav_fetch.py
-
-# 3. Run ingestion & EDA
-python data_ingestion.py
+git clone <repository-url>
+cd mutual-fund-analytics
 ```
 
-## Data Sources
+Install dependencies:
 
-All data fetched live from **[mfapi.in](https://api.mfapi.in)** — a free, public Mutual Fund API for India.
+```bash
+pip install -r requirements.txt
+```
 
-| Endpoint | Description |
-|---|---|
-| `GET /mf/all` | Full fund master list (all AMFI scheme codes + names) |
-| `GET /mf/{scheme_code}` | NAV history for a specific scheme |
+Run the pipeline:
 
-## Schemes Tracked (Day 1)
+```bash
+python run_pipeline.py
+```
 
-| Scheme | AMFI Code |
-|---|---|
-| HDFC Top 100 Direct | 125497 |
-| SBI Bluechip | 119551 |
-| ICICI Bluechip | 120503 |
-| Nippon Large Cap | 118632 |
-| Axis Bluechip | 119092 |
-| Kotak Bluechip | 120841 |
+---
 
-## Deliverables — Day 1
+## 📌 Key Insights
 
-- [x] `data_ingestion.py` — EDA on all raw CSVs, fund master exploration, AMFI code validation
-- [x] `live_nav_fetch.py` — Live NAV fetch for HDFC + 5 key schemes
-- [x] `requirements.txt` — All Python dependencies
-- [x] `setup.sh` — Folder structure init + git setup
-- [x] `reports/data_quality_summary.txt` — Generated after running `data_ingestion.py`
+- SIP inflows crossed ₹31,000 Cr
+- Folio count nearly doubled
+- Young investors dominate participation
+- SBI MF leads industry AUM
+- Positive Alpha observed across multiple schemes
+- Diversification opportunities identified through correlation analysis
+
+---
+
+## 🔮 Future Enhancements
+
+- Live NAV Integration
+- AI-based Fund Recommendation Engine
+- Portfolio Optimization
+- Predictive Analytics
+- Automated Reporting
+
+---
+
+## 👨‍💻 Author
+
+**Nihal Chadha**
+
+B.Tech Electronics & Communication Engineering  
+Delhi Technological University
+
+---
