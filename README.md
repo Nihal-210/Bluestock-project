@@ -135,7 +135,7 @@ The Power BI dashboard contains:
 ---
 
 ## 📁 Repository Structure
-
+```text
 📦bluestock_mf_capstone
  ┣ 📂data
  ┃ ┣ 📂raw                         # Immutable source assets & live API extractions
@@ -178,7 +178,7 @@ The Power BI dashboard contains:
  ┣ 📜data_dictionary.md            # Warehouse data model catalog
  ┣ 📜run_pipeline.py               # Absolute path automation master controller
  ┗ 📜Bluestock_MF_Presentation.pptx # Fintech investment presentation deck
-
+```
 ---
 
 ## 🛠️ Tech Stack
