@@ -148,25 +148,20 @@ The Power BI dashboard contains:
  ┃ ┃ ┗ 📜clean_transaction.csv
  ┃ ┣ 📂db                          # SQLite Star Schema warehouse engine
  ┃ ┃ ┗ 📜bluestock_mf.db
- ┃ ┗ 📜README.md
  ┣ 📂notebooks                     # Sequential pipeline processing environments
  ┃ ┣ 📜01_data_ingestion.ipynb
  ┃ ┣ 📜02_data_cleaning.ipynb
  ┃ ┣ 📜03_EDA_Analysis.ipynb
  ┃ ┣ 📜04_Performance_Analytics.ipynb
  ┃ ┣ 📜05_Advanced_Analytics.ipynb
- ┃ ┗ 📜README.md
  ┣ 📂scripts                       # Production automation & execution apps
  ┃ ┣ 📜live_nav_fetch.py
  ┃ ┣ 📜recommender.py
- ┃ ┗ 📜README.md
  ┣ 📂sql                           # Structural warehouse creation logic
  ┃ ┣ 📜schema.sql
  ┃ ┣ 📜queries.sql
- ┃ ┗ 📜README.md
  ┣ 📂dashboard                     # Front-end business intelligence binaries
  ┃ ┣ 📜bluestock_mf_dashboard.pbix
- ┃ ┗ 📜README.md
  ┣ 📂reports                       # Exported analytical metrics, visuals & PDFs
  ┃ ┣ 📜fund_scorecard.csv
  ┃ ┣ 📜var_cvar_reports.csv
@@ -174,10 +169,11 @@ The Power BI dashboard contains:
  ┃ ┣ 📜Dashboard - Page1.png
  ┃ ┣ 📜Final_Report.pdf
  ┃ ┗ 📜README.md
+ ┃ ┗ 📜Bluestock_MF_Presentation.pptx # Fintech investment presentation deck
  ┣ 📜requirements.txt              # Standard system dependencies
  ┣ 📜data_dictionary.md            # Warehouse data model catalog
  ┣ 📜run_pipeline.py               # Absolute path automation master controller
- ┗ 📜Bluestock_MF_Presentation.pptx # Fintech investment presentation deck
+ ┗ 📜 README.md
 ```
 ---
 
